@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebase_push_notfications/main.dart';
-import 'package:firebase_push_notfications/utils/routes/route_name.dart';
+import 'package:opvoedmaatje/main.dart';
+import 'package:opvoedmaatje/utils/routes/route_name.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 //handle background message must be a top-level function

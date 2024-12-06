@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_push_notfications/view/home_screen.dart';
-import 'package:firebase_push_notfications/view/notification_scren.dart';
-import 'package:firebase_push_notfications/utils/routes/route_name.dart';
+import 'package:opvoedmaatje/view/home_screen.dart';
+import 'package:opvoedmaatje/view/notification_scren.dart';
+import 'package:opvoedmaatje/utils/routes/route_name.dart';
 import 'package:flutter/material.dart';
 import 'view_model/services/firebase_service.dart';
 import 'firebase_options.dart';

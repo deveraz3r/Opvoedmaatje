@@ -1,5 +1,5 @@
-import 'package:firebase_push_notfications/view/notification_scren.dart';
-import 'package:firebase_push_notfications/utils/routes/route_name.dart';
+import 'package:opvoedmaatje/view/notification_scren.dart';
+import 'package:opvoedmaatje/utils/routes/route_name.dart';
 import 'package:flutter/material.dart';
 
 import '../../view/home_screen.dart';
