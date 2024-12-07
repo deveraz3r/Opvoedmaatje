@@ -1,4 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:get/get.dart';
+import 'package:opvoedmaatje/resources/app_colors.dart';
+import 'package:opvoedmaatje/utils/routes/routes.dart';
+import 'package:opvoedmaatje/view/chat_screen.dart';
+import 'package:opvoedmaatje/view/history_screen.dart';
 import 'package:opvoedmaatje/view/home_screen.dart';
 import 'package:opvoedmaatje/view/notification_scren.dart';
 import 'package:opvoedmaatje/utils/routes/route_name.dart';
@@ -18,19 +23,23 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override`
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'Chat bot',
       navigatorKey: navigatorKey,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
-      routes: {
-        RouteName.notificationScreen: (context) => const NotificationScreen()
-      },
+      debugShowCheckedModeBanner: false,
+      // home: HomeScreen(),
+      // routes: {
+      //   RouteName.notificationScreen: (context) => const NotificationScreen(),
+      //   RouteName.chatScreen: (context) => ChatScreen(),
+      //   RouteName.historyScreen: (context) => HistoryScreen(),
+      // },
+      getPages: Routes.appRoutes(),
     );
   }
 }

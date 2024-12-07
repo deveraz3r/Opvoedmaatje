@@ -42,6 +42,7 @@ dependencies:
   another_flushbar: ^1.12.30
   fluttertoast: ^8.2.8
   get: ^4.6.6
+  firebase_auth: ^5.3.4
 
 dev_dependencies:
   flutter_test:
